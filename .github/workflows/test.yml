@@ -20,6 +20,9 @@ jobs:
           node-version: 18
           cache: npm
 
+      - name: Print Hello from Hexlet
+        uses: hexlet-components/hello-from-hexlet-action@release
+
       - name: Install & build
         run: make setup
 
