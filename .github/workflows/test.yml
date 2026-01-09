@@ -1,7 +1,10 @@
 # file: .github/workflows/test.yml
-name: test
+name: Node CI
 # on – определяет события, которые запускают воркфлоу
-on: push
+on: 
+  - push
+  - pull_request
+  
 jobs:
   # build – произвольно выбранное имя задания
   # их может быть больше одного
